@@ -1,0 +1,274 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A090A;
+    color: #fff;
+    font-family: Roboto;
+    background-image: url(/img/main-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* прижимаем к верху центр*/
+
+}
+
+.container {
+    max-width: 1140px;
+    /*выавниванеи по центру*/
+    margin: auto;
+}
+
+.header {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30%;
+    /*расстояние между  контейнерами в процентами что бы немного даптировалось*/
+}
+
+
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+    /*посмотреть надо что такое, у дочернего становится проценное отношение размера*/
+}
+
+.search-input {
+    /* position: absolute;
+    width: 800px;
+    height: 40px;
+    left: calc(50% - 800px/2 - 12.72px);
+    top: calc(50% - 40px/2 - 800.5px);*/
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 5px;
+    padding: 12px 18px 12px 18px;
+    border: none;
+    flex: 1;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+/*поменть цвет плайсхолдер можно так, искал на сайте*/
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: #AEAEAE;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #AEAEAE;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #AEAEAE;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #AEAEAE;
+    opacity: 1;
+}
+
+
+
+.search-button {
+    background-color: transparent;
+    /*батурин, как так, это прозрачный уже начинаешь забывать*/
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    /* можно выравнить картинку е сответсвующа\ заббаритам*/
+}
+
+.bookmark {
+    cursor: pointer;
+}
+
+.title {
+    margin: 0;
+    /*сброс все мардинов*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+/*спал \вляется строчым, поэтому оттолкнуть можно только переводом в стросо блочноый*/
+.title-en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 72px;
+    height: 29px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.country {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 33px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    /*убрать подчеркутость текста*/
+}
+
+.play:before {
+    content: '';
+    /*говорит о том что ничего непер тестом нне будет*/
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/play.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.more:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/play.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
+    /*перевернуть на 90 градусов*/
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #0A090A;
+    padding: 43px 50px;
+}
+
+.poster {
+    display: block;
+    margin-top: -80px;
+    /*для подьема вверх*/
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #FF8F27;
+    padding: 10px 45px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    border: none;
+}
+
+.actors-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    margin: 0;
+    list-style: none;
+    /*убрать кружочки перед текстом*/
+    padding-left: 15px;
+    text-decoration: underline;
+    /*подчеркнутый текст*/
+}
+
+.full-info {
+    flex: 0.97;
+}
+
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-content {
+    margin-right: 70px;
+}
+
+.tabs-item {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tabs-item-active {
+    color: #FF8F27;
+}
