@@ -11,6 +11,7 @@ body {
     background-image: url(/img/main-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: 100%;
     /* прижимаем к верху центр*/
 
 }
@@ -212,12 +213,16 @@ body {
     background: #FFFFFF;
     border-radius: 3px;
     color: #0A090A;
-    padding: 43px 50px;
+    padding: 3% 4%;
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .poster {
     display: block;
-    margin-top: -80px;
+    margin-top: -40%;
     /*для подьема вверх*/
     margin-bottom: 20px;
 }
@@ -246,6 +251,8 @@ body {
     padding-left: 15px;
     text-decoration: underline;
     /*подчеркнутый текст*/
+    line-height: 150%;
+
 }
 
 .full-info {
@@ -257,18 +264,207 @@ body {
     justify-content: space-between;
 }
 
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
 .tabs-content {
     margin-right: 70px;
+}
+
+/*придает все свойства кроме последнего*/
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
 }
 
 .tabs-item {
     color: #000000;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
     line-height: 21px;
 }
 
 .tabs-item-active {
     color: #FF8F27;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0;
+}
+
+
+.subcribe-form {
+    display: flex;
+    width: 220px;
+    margin-bottom: 48px;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.subscribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 12px 18px 12px 18px;
+    border: none;
+    flex: 1;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.subscribe-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 12px;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .tabs-item {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
+
+    .tabs-content {
+        margin-bottom: 5%;
+    }
+
+    .text {
+        font-style: 14px;
+    }
+
+    .actors-list {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-item {
+        flex-basis: 33%;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+
+
+
+    @media(max-width: 578px) {
+        .container {
+            width: 90%;
+        }
+
+        .header {
+            flex-wrap: wrap;
+        }
+
+        .search {
+            flex-basis: 100%;
+            order: 3;
+            /*повторитьт флекс*/
+            margin-top: 5%;
+        }
+
+        .content {
+            flex-wrap: wrap;
+        }
+
+        .short-info {
+            margin-bottom: 5%;
+        }
+
+        .actors-list,
+        .actors-title {
+            display: none;
+        }
+
+        .movie-info {
+            flex-wrap: wrap;
+        }
+
+        .play {
+            flex-basis: 100%;
+            margin-top: 5%;
+        }
+
+        .short-info {
+            margin-right: 0;
+        }
+
+        .poster {
+            margin-top: -20%;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .button {
+            width: 100%;
+        }
+
+        /*для адаптации рекламы так себе код*/
+        .subscribe {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .subscribe-title {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        .subcribe-form {
+            width: 100%;
+        }
+
+        .subscribe-input {
+            width: 100%;
+        }
+
+        .banner-img {
+            width: 100%;
+        }
+    }
+
 }
