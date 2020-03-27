@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jquery.fancybox.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap&subset=cyrillic"
       rel="stylesheet"
@@ -12,6 +13,8 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../scr/normalize/normalize.css" />
+    <link rel="stylesheet" href="animate .css" />
     <title>Бетмент 2021</title>
   </head>
   <body>
@@ -35,13 +38,18 @@
         </div>
       </header>
       <main class="main">
-        <h1 class="title">Бэтмен</h1>
-        <small class="title-en">The Batman</small>
-        <div class="info">
+        <h1 class="title animated fadeInRight">Бэтмен</h1>
+        <small class="title-en animated fadeInRight">The Batman</small>
+        <div class="info animated fadeInUp delay-2s">
           <div class="movie-info">
             <span class="tag">Фильм</span>
             <span class="country">США, 2021 год</span>
-            <a href="" class="play">Смотреть трейлер</a>
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg"
+              class="play"
+              >Смотреть трейлер</a
+            >
           </div>
           <a href="" class="more">Подробнее</a>
         </div>
@@ -95,13 +103,14 @@
           </div>
           <div class="full-info">
             <div class="tabs">
-              <a href="#" class="tabs-item tabs-item-active">Описание</a>
-              <a href="#" class="tabs-item">Рецензия</a>
-              <a href="#" class="tabs-item">Премьера</a>
-              <a href="#" class="tabs-item">Актеры</a>
-              <a href="#" class="tabs-item">Награды</a>
-              <a href="#" class="tabs-item">Факты</a>
-              <a href="#" class="tabs-item">Сайты</a>
+              <!-- about ведет на на класс about -->
+              <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+              <a href="#reviews" class="tabs-item">Рецензия</a>
+              <a href="#premire" class="tabs-item">Премьера</a>
+              <a href="#actors" class="tabs-item">Актеры</a>
+              <a href="#rewards" class="tabs-item">Награды</a>
+              <a href="#fact" class="tabs-item">Факты</a>
+              <a href="#web" class="tabs-item">Сайты</a>
               <a href="#" class="tabs-item">
                 <img
                   src="img/bookmark-icon.svg"
@@ -111,7 +120,25 @@
               </a>
             </div>
             <div class="full-content">
-              <div class="tabs-content">
+              <div class="tabs-content" id="reviews">
+                <p class="text">Тут появятса рецензии</p>
+              </div>
+              <div class="tabs-content" id="premire">
+                <p class="text">Тут появятса Премьера</p>
+              </div>
+              <div class="tabs-content" id="actors">
+                <p class="text">Тут появятса Актеры</p>
+              </div>
+              <div class="tabs-content" id="rewards">
+                <p class="text">Тут появятса Награды</p>
+              </div>
+              <div class="tabs-content" id="fact">
+                <p class="text">Тут появятса Факты</p>
+              </div>
+              <div class="tabs-content" id="web">
+                <p class="text">Тут появятса Сайты</p>
+              </div>
+              <div class="tabs-content visible" id="about">
                 <p class="text">
                   Предстоящий американский супергеройский фильм, основанный на
                   одноимённых комиксах издательства DC Comics. Картина будет
@@ -171,5 +198,11 @@
         <!-- /.content -->
       </main>
     </div>
+    <!-- библиотека jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- fancybox  -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- подключения js -->
+    <script src="main.js"></script>
   </body>
 </html>

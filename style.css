@@ -5,15 +5,14 @@
 }
 
 body {
-    background-color: #0A090A;
+    background-color: #0a090a;
     color: #fff;
     font-family: Roboto;
-    background-image: url(/img/main-bg.png);
+    background-image: url(img/main-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%;
     /* прижимаем к верху центр*/
-
 }
 
 .container {
@@ -30,7 +29,6 @@ body {
     margin-bottom: 30%;
     /*расстояние между  контейнерами в процентами что бы немного даптировалось*/
 }
-
 
 .logo {
     font-style: normal;
@@ -66,27 +64,25 @@ body {
 /*поменть цвет плайсхолдер можно так, искал на сайте*/
 ::-webkit-input-placeholder {
     /* Chrome */
-    color: #AEAEAE;
+    color: #aeaeae;
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
-    color: #AEAEAE;
+    color: #aeaeae;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #AEAEAE;
+    color: #aeaeae;
     opacity: 1;
 }
 
 :-moz-placeholder {
     /* Firefox 4 - 18 */
-    color: #AEAEAE;
+    color: #aeaeae;
     opacity: 1;
 }
-
-
 
 .search-button {
     background-color: transparent;
@@ -94,7 +90,6 @@ body {
     border: none;
     padding: 10px 18px;
     cursor: pointer;
-
 }
 
 .user {
@@ -119,7 +114,7 @@ body {
 .title {
     margin: 0;
     /*сброс все мардинов*/
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 48px;
     line-height: 64px;
     margin-bottom: 7px;
@@ -139,7 +134,6 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 100px;
-
 }
 
 .movie-info {
@@ -152,7 +146,7 @@ body {
     padding: 5px 10px;
     width: 72px;
     height: 29px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 3px;
     color: #333333;
     margin-right: 20px;
@@ -161,7 +155,7 @@ body {
 .country {
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-right: 33px;
 }
 
@@ -170,13 +164,13 @@ body {
     align-items: center;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     /*убрать подчеркутость текста*/
 }
 
 .play:before {
-    content: '';
+    content: "";
     /*говорит о том что ничего непер тестом нне будет*/
     width: 30px;
     height: 30px;
@@ -191,12 +185,12 @@ body {
     align-items: center;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .more:after {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     background-image: url(/img/play.png);
@@ -210,9 +204,9 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 3px;
-    color: #0A090A;
+    color: #0a090a;
     padding: 3% 4%;
 }
 
@@ -228,7 +222,7 @@ body {
 }
 
 .button {
-    background: #FF8F27;
+    background: #ff8f27;
     padding: 10px 45px;
     font-size: 14px;
     line-height: 16px;
@@ -252,7 +246,6 @@ body {
     text-decoration: underline;
     /*подчеркнутый текст*/
     line-height: 150%;
-
 }
 
 .full-info {
@@ -271,7 +264,12 @@ body {
 }
 
 .tabs-content {
+    display: none;
     margin-right: 70px;
+}
+
+.visible {
+    display: block;
 }
 
 /*придает все свойства кроме последнего*/
@@ -287,7 +285,7 @@ body {
 }
 
 .tabs-item-active {
-    color: #FF8F27;
+    color: #ff8f27;
 }
 
 .text {
@@ -295,7 +293,6 @@ body {
     line-height: 140%;
     margin-top: 0;
 }
-
 
 .subcribe-form {
     display: flex;
@@ -325,13 +322,13 @@ body {
 }
 
 .subscribe-button {
-    background: #FF8F27;
+    background: #ff8f27;
     border-radius: 0px 5px 5px 0px;
     border: none;
     padding: 12px;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .container {
         max-width: 960px;
     }
@@ -341,7 +338,7 @@ body {
     }
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .container {
         max-width: 740px;
     }
@@ -372,7 +369,7 @@ body {
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
@@ -389,9 +386,7 @@ body {
         margin-right: 0;
     }
 
-
-
-    @media(max-width: 578px) {
+    @media (max-width: 578px) {
         .container {
             width: 90%;
         }
@@ -466,5 +461,4 @@ body {
             width: 100%;
         }
     }
-
 }
